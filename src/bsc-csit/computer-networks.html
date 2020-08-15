@@ -1,0 +1,485 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="After reading this  our notes, you will be able to answer the question."/>
+ <link rel="Shortcut icon" type="image/png" href="https://dslv9ilpbe7p1.cloudfront.net/W3_nDU_sLjE0rj2ermPGFA_store_logo_image.png">
+  <title>Computer Networks | BSc.CSIT</title>
+
+  <meta property="og:title" content="Computer Networks Note  "/>
+  <meta property="og:description" content=" Network is the interconnection of a set of devices capable of communication.
+There may be 2 kinds of devices in the network
+1. Host:- also called end system. (desktop, laptop, cell phone)
+2. Connecting Devices:- connects to other devices(modem, router, switch) Network Criteria
+1. Performance(evaluated by throughput and delay)
+2. Reliability(evaluated by frequency of failure)
+3. Scalability(Adding processing capacity)
+4. Security(protecting data from unauthorized access)"/>
+  <meta property="og:type" content="gcfglobal.lesson" />
+  <meta property="og:image" content="https://www.sujanpdl.com.np/index.png"/>
+  <meta property="og:site_name" content="https://www.sujanpdl.com.np"/>
+  
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Kalam:400' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://edu.gcfglobal.org//styles/lessonpage-en.concat.css">
+
+  <script src="https://edu.gcfglobal.org//scripts/lessonpage-en.concat.js" type="text/javascript"></script>
+
+  
+  
+    <link href="https://sujanpdl.com.np/bsc-csit/computer-networks" rel="canonical"/>
+<!----------Site Verification Tags------------->
+<meta name="google-site-verification" content="VEqcKveJLE1HXn6MLwfrDlGLwJwTG-dF3KDC3txYrDg" />
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139137650-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139137650-1');
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WDJJMDP');</script>
+<!-- End Google Tag Manager -->
+
+<!-----------Google Adsene------------>
+  <script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-9291744844799241",
+          enable_page_level_ads: true
+     });
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!----------End of Site Verifications------------------>
+  <script data-ad-client="ca-pub-9291744844799241" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body >
+<div class="header-wrapper">
+  <header>
+      <div id="page-header" class="desktop-header">
+        <div class="primary-header">
+        <div id="subjects-search">
+          <div id="subjects-search-box">
+
+            <div class="topnav-sls-container">
+              <a class="logo-link" href="https://www.sujanpdl.com.np">
+                 <img  src="https://sujanpdl.com.np/logo.png" alt="sujanpdl Logo" height="300px" width="450px" style="margin-top: -98px; padding-right: 0px;" >
+                  
+                
+                  <!--<img class="logo logo-middle logo-en" src="https://media.gcflearnfree.org/assets/logo/logo.png" alt="GCFLearnFree Logo"> -->
+                
+              </a>
+            </div>
+
+          </div>
+          <div class="topnav-rightbox">
+            
+            <button class="subjects-select" onclick="toggleSubjectsDropdown()">
+              <i class="dropdown-hamburger material-icons">menu</i>
+              <p>Notes</p>
+            </button>
+
+            
+              <a onclick="window.print()"class="print-button header-btn header-print-link">
+                <i class="material-icons">print</i>
+              </a>
+            
+            
+            
+          </div>
+        </div>
+        </div>
+        <!-- <div class="header-divider"></div> -->
+        
+          <div class="sub-header">
+            <div id="corner-gradient-left"></div>
+            <div id="corner-gradient-right"></div>
+            <div class="headerfooter-content-wrapper">
+              <div id="subheaderContentContainer">
+              
+                <div class="header-nodesc en">
+                  <h1>
+                    
+                      
+                    
+                    <span id="current-lesson-title" style="font-size: 40px;">Computer Networks</span>
+                  </h1>
+                  
+                    <a class="header-tutorial-link" href="https://www.sujanpdl.com.np/bsc ">Back to Home</a>
+                  
+                </div>
+              
+              <img id="header-img" class="header-image" src="https://edu.gcfglobal.org/images/city-aqua2.svg" alt="City Image">
+              </div>
+            </div>
+          </div>
+        
+      <div class="dropdown-wrapper">
+        <button class="dropdown-close-x" onclick="toggleSubjectsDropdown()">
+          <i class="material-icons">close</i>
+        </button>
+        <div class="dropdown-inner site-nav subjectMenuOption selectedMenuOption">
+          <h1>Select Your Notes:</h1>
+          <ul class="site-nav-contents site-nav">
+   <li class="supercollection">
+      <p style="font-weight: bold;">1st Semester</p>
+      <ul class="level-1">
+        <li><a href="https://www.sujanpdl.com.np/bsc-csit/introduction-to-information-technology.html"><i class="fa fa-angle-double-right"></i>Introduction to Information Technology</a>
+</li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/c-programming.html"><i class="fa fa-caret-rigth"></i>C Programming</a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/digital-logic.html"><i class="fa fa-angle-double-right"></i>Digital Logic</a>
+</li>
+
+        
+            
+      </ul>
+   </li>
+   <li class="supercollection">
+      <p style="font-weight: bold;">2nd Semester</p>
+      <ul class="level-1">
+        <li><a href="https://www.sujanpdl.com.np/bsc-csit/discrete-structure.html"><i class="fa fa-caret-rigth"></i>Discrete Structure</a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/object-oriented-programming.html"><i class="fa fa-caret-rigth"></i>Object Oriented Programming</a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/microprocessor.html"><i class="fa fa-caret-rigth"></i>Microprocessor</a></li>
+
+      </ul>
+   </li>
+   <li class="supercollection">
+        <p style="font-weight: bold;">3rd Semester</p>
+      <ul class="level-1">
+         <li><a href="https://www.sujanpdl.com.np/bsc-csit/data-structure-and-algorithms.html"><i class="fa fa-caret-rigth"></i>Data Structure and Algorithms </a></li>
+
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/computer-architecture.html"><i class="fa fa-caret-rigth"></i>Computer Architeecture </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/computer-graphics.html"><i class="fa fa-caret-rigth"></i>Computer Graphics </a></li>
+
+      </ul>
+   </li>
+    <li class="supercollection">
+        <p style="font-weight: bold;">4th Semester</p>
+      <ul class="level-1">
+        <li><a href="https://www.sujanpdl.com.np/bsc-csit/theory-of-computation.html"><i class="fa fa-caret-rigth"></i>Theory of Computation </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/computer-networks.html"><i class="fa fa-caret-rigth"></i>Computer Networks </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/operating-systems.html"><i class="fa fa-caret-rigth"></i>Operating Systems </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/database-management-system.html"><i class="fa fa-caret-rigth"></i>Database Management System </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/artificial-intelligence.html"><i class="fa fa-caret-rigth"></i>Artificial Intelligence </a></li>
+      </ul>
+   </li>
+  
+   <li class="supercollection">
+      <p style="font-weight: bold;">5th Semester</p>
+      <ul class="level-1">
+        <li><a href="https://www.sujanpdl.com.np/bsc-csit/design-and-analysis-of-algorithms.html"><i class="fa fa-caret-rigth"></i>Design and Analysis of Algorithms</a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/system-analysis-and-design.html"><i class="fa fa-caret-rigth"></i>
+System Analysis and Design </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/cryptography.html"><i class="fa fa-caret-rigth"></i>Cryptography</a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/simulation-and-modelling.html"><i class="fa fa-caret-rigth"></i>Simulation and Modelling </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/web-technology.html"><i class="fa fa-caret-rigth"></i>Web Technology</a></li>
+      </ul>
+   </li>
+   <li class="supercollection">
+      <p style="font-weight: bold;">6th Semester</p>
+      <ul class="level-1">
+        <li><a href="https://www.sujanpdl.com.np/bsc-csit/software-engineering.html"><i class="fa fa-caret-rigth"></i>Software Engineering </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/complier-design-and-construction.html"><i class="fa fa-caret-rigth"></i>Complier Design and Construction </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/e-governance.html"><i class="fa fa-caret-rigth"></i>E-Governance </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/net-centric-computing.html"><i class="fa fa-caret-rigth"></i>NET Centric Computing </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/technical-writting.html"><i class="fa fa-caret-rigth"></i>Technical Writting </a></li>
+      </ul>
+   </li>
+    <li class="supercollection">
+      <p style="font-weight: bold;">7th Semester</p>
+      <ul class="level-1">
+         <li><a href="https://www.sujanpdl.com.np/bsc-csit/advanced-java-programming.html"><i class="fa fa-caret-rigth"></i>
+Advanced Java Programming </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csi/data-warehousing-and-data-mining.html"><i class="fa fa-caret-rigth"></i>Data Warehousing and Data Mining</a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/principles-of-management.html"><i class="fa fa-caret-rigth"></i>Principles of Management </a></li>
+      </ul>
+   </li>
+    <li class="supercollection">
+      <p style="font-weight: bold;">8th Semester</p>
+      <ul class="level-1">
+         <li><a href="https://www.sujanpdl.com.np/bsc-csit/advanced-database.html"><i class="fa fa-caret-rigth"></i>Advanced Database</a></li>
+      </ul>
+   </li>
+</ul>
+          
+        </div>
+      </div>
+      </div>
+          <div class="print-header">
+            <div class="print-header-wrapper">
+            <header>
+                <div class="desktop-header">
+                  <h1>
+                  <div class="print-first-title"> Computer Networks</div>
+                  <div class="print-second-title">Bachelors of Science in Computer Science and Information Technology (BSc. CSIT)</div>
+                </h1>
+                <img class="logo" src="https://sujanpdl.com.np/logo.png" alt="sujanpdl logo" />
+                </div>
+            </header>
+          </div>
+          </div>
+        
+      
+
+      
+      <div class="mobile-header">
+          <div id="page-top">
+            <a data-route="home" class="home-link" href="https://www.sujanpdl.com.np">
+              
+          <!-- <img class="homeicon en en-new" src="https://media.gcflearnfree.org/mobile/GCF_whitelogo.png" alt="GCFLearnFree Logo"> -->
+          <img class="homeicon en" style="margin-top: -50px;"src="https://www.sujanpdl.com.np/logo.png" alt="sujanpdl Logo">
+        
+            </a>
+            <!-- TODO need new non-polymer icon -->
+            <!-- <paper-icon-button on-tap="toggleNavCollapse" id="navdropdown" icon="menu"></paper-icon-button> --> 
+           
+            <i onclick="toggleNavCollapse()" class="material-icons menu-icon menu-icon-right">menu</i>
+           
+          </div>
+          <div id="navcollapse">
+            <div class="navcollapsecontent">
+              <a href="https://sujanpdl.com.np/bsc-csit/notes">Notes</a>
+              
+                
+              
+              <a href="https://sujanpdl.com.np/bsc-csit/about-us">About Us</a>
+              <a href="https://sujanpdl.com.np/bsc-csit/faq">FAQ</a>
+              <a href="https://sujanpdl.com.np/bsc-csit/contact-us">Contact Us</a>
+
+              <div class="language-picker">
+              
+                <a href="https://sujanpdl.com.np/bsc ">BSc.CSIT</a>
+                  <a href="#">FACULTY</a>
+                <a href="https://sujanpdl.com.np/dcom-notes">DCOM</a>
+            </div>
+            </div>
+          </div>
+        
+          
+      </div>
+
+  </header>
+</div>
+  <div id="background">
+    <div id="page-wrapper">
+      <div id="content-area">
+        <a class="back-to-tutorial-mobile" href="https://www.sujanpdl.com.np/bsc ">Back to Home</a>
+        <div>
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Header -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9291744844799241"
+     data-ad-slot="8071080147"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+          <div class="text-plus-page content-item">
+            <div id="lessoncontent">
+              
+              <div id="https://sujanpdl.com.np/bsc-csit/computer-networks" class="lesson-block lesson" data-title="What is Computer Networks?">
+              
+                <div id="first-divider" class="divider-box">
+                  <div class="infinite-scroll-divider"></div>
+                  <h4>Theory of Computation</h4>
+                </div>
+                
+                  <p class="scroll-trigger-top">https://edu.gcfglobal.org/en/computerbasics/about-this-tutorial/content/</p>
+
+          
+<h3> Introduction </h3><br/>
+Network is the interconnection of a set of devices capable of
+communication.<br/>
+There may be 2 kinds of devices in the network<br/>
+1. Host:- also called end system. (desktop, laptop, cell phone)<br/>
+2. Connecting Devices:- connects to other devices(modem, router, switch)
+Network Criteria<br/>
+1. Performance(evaluated by throughput and delay)<br/>
+2. Reliability(evaluated by frequency of failure)<br/>
+3. Scalability(Adding processing capacity)<br/>
+4. Security(protecting data from unauthorized access)<br/><br/>
+
+
+<strong>Application of Computer Networks</strong><br/>
+1. Business Application<br/>
+a) Resource Sharing<br/>
+b) High Reliability<br/>
+c) Saving Money<br/>
+2. Home Application<br/>
+a) Access to Remote Information(WWW)<br/>
+b) Person to Person communication<br/>
+c) Interactive Entertainment(Live TV, Games)<br/><br/>
+
+<strong>Merits</strong><br/>
+• Allows File Sharing/ Resource Sharing<br/>
+• Inexpensive System<br/>
+• Flexible to be Used<br/>
+• Increase in Storage Capacity of the Software<br/><br/>
+
+<strong>Demerits</strong><br/>
+• Security Difficulties(Hacking)<br/>
+• Presence of Computer Viruses and Other Malwares<br/><br/>
+
+<strong>Network Models</strong><br/>
+• There are several classification for networks<br/>
+• Classification based on Scale(size)<br/>
+• Classification based on Topology<br/>
+• Classification based on Architecture<br/><br/>
+
+<strong>Network Models : Based on Scale</strong><br/><br/>
+• According to the scale(size) of the networks is classified into following<br/>
+1. PAN (Personal Area Network)<br/>
+2. LAN (Local Area Network)<br/>
+3. CAN (Campus Area Network)<br/>
+4. MAN (Metropolitan Area Network)<br/>
+5. DAN (Desert Area Network)<br/>
+6. CAN* (Country Area Network)<br/>
+7. WAN (Wide Area Network)<br/>
+8. GAN (Global Area Network)<br/><br/>
+
+<strong>Personal Area Network(PAN)</strong><br/>
+• Used for data transmission among devices such as computers, mobile
+phones, PDA etc.<br/>
+• Within few meters like 10 meters only<br/>
+• Medium : Bluetooth, Infrared<br/>
+• Only very few connections will be available<br/><br/>
+
+<strong>Local Area Network(LAN)</strong><br/>
+• It is a computer network that spans a relatively small area<br/>
+• Most LANs are confined to a single building or group of buildings<br/>
+• One LAN can be connected to other LANs over any distance via
+telephone lines and radio waves (WAN)<br/>
+• Medium: optical fibers, coaxial cables, twisted pair, wireless.<br/>
+• Low latency (except in high traffic periods).<br/>
+• High speed networks (0.2 Mb/sec to 1Gb/sec).<br/>
+• Speeds adequate for most distributed systems<br/><br/>
+
+<strong>Campus Area Network(CAN)</strong><br/>
+• Computer network that links the buildings and consists of two or
+more local area networks (LANs) within the limited geographical area<br/>
+• It can be the college campus, enterprise campus, office buildings,
+military base, industrial complex<br/>
+• CAN is one of the type of MAN (Metropolitan Area Network) on the
+area smaller than MAN<br/>
+• The Campus networks usually use the LAN technologies, such as
+Ethernet, Token Ring, Fibber Distributed Data Interface (FDDI), Fast
+Ethernet, Gigabit Ethernet, Asynchronous Transfer Mode (ATM)<br/><br/>
+
+<strong>Metropolitan Area Network(MAN)</strong><br/>
+• Metropolitan Area Network, are data networks designed for a town In
+terms of geographic breadth<br/>
+• MANs are larger than local area networks (LANs), but smaller than
+wide-area networks s)<br/>
+• MANs are usually characterized by very high-speed connections using
+fiber optical cable or other digital media<br/><br/>
+<strong>Features:</strong><br/>
+• Generally covers towns and cities (50 kms)<br/>
+• Medium: optical fibers, cables.<br/>
+• Data rates adequate for distributed computing applications.<br/>
+
+
+
+<br />
+<br/>
+<h5  style="font-weight:bold; color:darkorange;" align="center">Download the pdf file  to get all the unit wise notes.<br/>Try to save your valueable time!<br/><a href="https://drive.google.com/file/d/1b2C40pElmcXPjgLvs8nmKgecvsDOET_e/view?usp=sharing"><i style="font-size: 70px; " class="material-icons">
+cloud_download
+</i></a><br/>Click Here!</h5>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Header -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9291744844799241"
+     data-ad-slot="8071080147"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+                <br/><br/><br/><Br/><br/><br/><br/><br/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="push"></div>
+    </div>
+  </div>
+ 
+    <footer class="footer">
+  <div class="desktopfooter">
+    <div class="main-footer">
+      <div class="footer-drag-handle" onclick="toggleFooter()">
+        <i class="up-arrow material-icons">keyboard_arrow_up</i>
+        <i class="down-arrow material-icons">keyboard_arrow_down</i>
+      </div>
+      <!-- <div class="footer-section-headers"></div> -->
+      <div id="footerContent">
+        <div>
+          <div class="footer-links-container">
+            <div id="sectionOne" class="text-links">
+              <h4 class="footerheaders">Our Services</h4>
+             <a href="https://sujanpdl.com.np/bsc-csit/notes"><i class="fa fa-angle-double-right"></i>Notes</a></li><br/>
+<a href="https://sujanpdl.com.np/bsc-csit/pdf/bsc-syllabus.pdf"><i class="fa fa-angle-double-right"></i>Syallabus</a></li><br/>
+<a href="#"><i class="fa fa-angle-double-right"></i>PDF Files</a><br/>
+              
+            </div>
+            <div id="sectionTwo" class="text-links">
+              <h4 class="footerheaders">Useful Softwares</h4>
+            <a href=" https://www.sublimetext.com/3" target="_blank"><i class="fa fa-angle-double-right"></i>Sublime Text</a><br/>
+<a href=" https://notepad-plus-plus.org/download/v7.7.1.html" target="_blank"><i class="fa fa-angle-double-right"></i>Notepad++</a><br/>
+<a href="https://www.adobe.com/products/photoshop/free-trial-download.html " target="_blank"><i class="fa fa-angle-double-right"></i>Adobe Photoshop</a><br/>
+<a href="https://www.swi-prolog.org/download/stable " target="_blank"><i class="fa fa-angle-double-right"></i>SWI Prolog</a><br/>
+              
+            </div>
+            <div id="sectionThree" class="text-links">
+              <h4 class="footerheaders">Company</h4>
+<a href="https://sujanpdl.com.np/bsc-csit/about-us"><i class="fa fa-angle-double-right"></i>About Us</a><br/>
+<a href="https://sujanpdl.com.np/bsc-csit/privacy-policy"><i class="fa fa-angle-double-right"></i>Privacy Policy</a><br/>
+<a href="https://sujanpdl.com.np/bsc-csit/about-us"><i class="fa fa-angle-double-right"></i>Our Team</a><br/>
+<a href="https://sujanpdl.com.np/bsc-csit/faq"><i class="fa fa-angle-double-right"></i>FAQ's</a><br/>
+<a href="https://sujanpdl.com.np/bsc-csit/dmca"><i class="fa fa-angle-double-right"></i>DMCA</a><br/>
+             
+              
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+    <p id="copyright">&copy;2018 sujanpdl.com.np, Inc. All rights reserved.
+      Modified by: <a href="" target="_blank">Sujan Paudel</a>.
+      Powered by: <a href="https://edu.gcfglobal.org/" target="_blank">GCF Global</a></p><br/>.
+
+
+    </p>
+
+  </div>
+  <div class="mobilefooter">
+    <div class="footer-drag-handle" onclick="toggleMobileFooter()">
+      <i class="up-arrow material-icons">keyboard_arrow_up</i>
+      <i class="down-arrow material-icons">keyboard_arrow_down</i>
+    </div>
+    <div class="mobileFooterContent">
+      <a href="https://sujanpdl.com.np"><img class="globalicon" alt="sujanpdl.com.np" src="logo.png"></img></a>
+     <p id="copyright">&copy;2018 sujanpdl.com.np, Inc. All rights reserved.
+      Modified by: <a href="" target="_blank">Sujan Paudel</a>.
+      Powered by: <a href="https://edu.gcfglobal.org/" target="_blank">GCF Global</a></p><br/>.
+    </div>
+  </div>
+</footer>
+</body>
+</html>

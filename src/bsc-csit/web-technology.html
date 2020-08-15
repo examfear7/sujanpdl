@@ -1,0 +1,460 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="After reading this  our notes, you will be able to answer the question."/>
+ <link rel="Shortcut icon" type="image/png" href="https://dslv9ilpbe7p1.cloudfront.net/W3_nDU_sLjE0rj2ermPGFA_store_logo_image.png">
+  <title>  Web Technology| BSc.CSIT</title>
+
+  <meta property="og:title" content="   Web Technology Note  "/>
+  <meta property="og:description" content="Web technologies related to the interface between web servers and their clients. This
+information includes markup languages, programming interfaces and languages, and
+standards for document identification and display. In general web technology incorporates
+tools and techniques for web development.
+"/>
+  <meta property="og:type" content="gcfglobal.lesson" />
+  <meta property="og:image" content="https://www.sujanpdl.com.np/index.png"/>
+  <meta property="og:site_name" content="https://www.sujanpdl.com.np"/>
+  
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Kalam:400' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://edu.gcfglobal.org//styles/lessonpage-en.concat.css">
+
+  <script src="https://edu.gcfglobal.org//scripts/lessonpage-en.concat.js" type="text/javascript"></script>
+
+  
+  
+ <link href="https://www.sujanpdl.com.np/bsc-csit/web-technology" rel="canonical"/>
+<!----------Site Verification Tags------------->
+<meta name="google-site-verification" content="VEqcKveJLE1HXn6MLwfrDlGLwJwTG-dF3KDC3txYrDg" />
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139137650-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139137650-1');
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WDJJMDP');</script>
+<!-- End Google Tag Manager -->
+
+<!-----------Google Adsene------------>
+  <script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-9291744844799241",
+          enable_page_level_ads: true
+     });
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!----------End of Site Verifications------------------>
+  <script data-ad-client="ca-pub-9291744844799241" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body >
+<div class="header-wrapper">
+  <header>
+      <div id="page-header" class="desktop-header">
+        <div class="primary-header">
+        <div id="subjects-search">
+          <div id="subjects-search-box">
+
+            <div class="topnav-sls-container">
+              <a class="logo-link" href="https://www.sujanpdl.com.np">
+                 <img  src="https://sujanpdl.com.np/logo.png" alt="sujanpdl Logo" height="300px" width="450px" style="margin-top: -98px; padding-right: 0px;" >
+                  
+                
+                  <!--<img class="logo logo-middle logo-en" src="https://media.gcflearnfree.org/assets/logo/logo.png" alt="GCFLearnFree Logo"> -->
+                
+              </a>
+            </div>
+
+          </div>
+          <div class="topnav-rightbox">
+            
+            <button class="subjects-select" onclick="toggleSubjectsDropdown()">
+              <i class="dropdown-hamburger material-icons">menu</i>
+              <p>Notes</p>
+            </button>
+
+            
+              <a onclick="window.print()"class="print-button header-btn header-print-link">
+                <i class="material-icons">print</i>
+              </a>
+            
+            
+            
+          </div>
+        </div>
+        </div>
+        <!-- <div class="header-divider"></div> -->
+        
+          <div class="sub-header">
+            <div id="corner-gradient-left"></div>
+            <div id="corner-gradient-right"></div>
+            <div class="headerfooter-content-wrapper">
+              <div id="subheaderContentContainer">
+              
+                <div class="header-nodesc en">
+                  <h1>
+                    
+                      
+                    
+                    <span id="current-lesson-title" style="font-size: 40px;">Web Technology</span>
+                  </h1>
+                  
+                    <a class="header-tutorial-link" href="https://www.sujanpdl.com.np/bsc ">Back to Home</a>
+                  
+                </div>
+              
+              <img id="header-img" class="header-image" src="https://edu.gcfglobal.org/images/city-aqua2.svg" alt="City Image">
+              </div>
+            </div>
+          </div>
+        
+      <div class="dropdown-wrapper">
+        <button class="dropdown-close-x" onclick="toggleSubjectsDropdown()">
+          <i class="material-icons">close</i>
+        </button>
+        <div class="dropdown-inner site-nav subjectMenuOption selectedMenuOption">
+          <h1>Select Your Notes:</h1>
+          <ul class="site-nav-contents site-nav">
+   <li class="supercollection">
+      <p style="font-weight: bold;">1st Semester</p>
+      <ul class="level-1">
+        <li><a href="https://www.sujanpdl.com.np/bsc-csit/introduction-to-information-technology.html"><i class="fa fa-angle-double-right"></i>Introduction to Information Technology</a>
+</li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/c-programming.html"><i class="fa fa-caret-rigth"></i>C Programming</a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/digital-logic.html"><i class="fa fa-angle-double-right"></i>Digital Logic</a>
+</li>
+
+        
+            
+      </ul>
+   </li>
+   <li class="supercollection">
+      <p style="font-weight: bold;">2nd Semester</p>
+      <ul class="level-1">
+        <li><a href="https://www.sujanpdl.com.np/bsc-csit/discrete-structure.html"><i class="fa fa-caret-rigth"></i>Discrete Structure</a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/object-oriented-programming.html"><i class="fa fa-caret-rigth"></i>Object Oriented Programming</a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/microprocessor.html"><i class="fa fa-caret-rigth"></i>Microprocessor</a></li>
+
+      </ul>
+   </li>
+   <li class="supercollection">
+        <p style="font-weight: bold;">3rd Semester</p>
+      <ul class="level-1">
+         <li><a href="https://www.sujanpdl.com.np/bsc-csit/data-structure-and-algorithms.html"><i class="fa fa-caret-rigth"></i>Data Structure and Algorithms </a></li>
+
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/computer-architecture.html"><i class="fa fa-caret-rigth"></i>Computer Architeecture </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/computer-graphics.html"><i class="fa fa-caret-rigth"></i>Computer Graphics </a></li>
+
+      </ul>
+   </li>
+    <li class="supercollection">
+        <p style="font-weight: bold;">4th Semester</p>
+      <ul class="level-1">
+        <li><a href="https://www.sujanpdl.com.np/bsc-csit/theory-of-computation.html"><i class="fa fa-caret-rigth"></i>Theory of Computation </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/computer-networks.html"><i class="fa fa-caret-rigth"></i>Computer Networks </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/operating-systems.html"><i class="fa fa-caret-rigth"></i>Operating Systems </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/database-management-system.html"><i class="fa fa-caret-rigth"></i>Database Management System </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/artificial-intelligence.html"><i class="fa fa-caret-rigth"></i>Artificial Intelligence </a></li>
+      </ul>
+   </li>
+  
+   <li class="supercollection">
+      <p style="font-weight: bold;">5th Semester</p>
+      <ul class="level-1">
+        <li><a href="https://www.sujanpdl.com.np/bsc-csit/design-and-analysis-of-algorithms.html"><i class="fa fa-caret-rigth"></i>Design and Analysis of Algorithms</a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/system-analysis-and-design.html"><i class="fa fa-caret-rigth"></i>
+System Analysis and Design </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/cryptography.html"><i class="fa fa-caret-rigth"></i>Cryptography</a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/simulation-and-modelling.html"><i class="fa fa-caret-rigth"></i>Simulation and Modelling </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/web-technology.html"><i class="fa fa-caret-rigth"></i>Web Technology</a></li>
+      </ul>
+   </li>
+   <li class="supercollection">
+      <p style="font-weight: bold;">6th Semester</p>
+      <ul class="level-1">
+        <li><a href="https://www.sujanpdl.com.np/bsc-csit/software-engineering.html"><i class="fa fa-caret-rigth"></i>Software Engineering </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/complier-design-and-construction.html"><i class="fa fa-caret-rigth"></i>Complier Design and Construction </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/e-governance.html"><i class="fa fa-caret-rigth"></i>E-Governance </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/net-centric-computing.html"><i class="fa fa-caret-rigth"></i>NET Centric Computing </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/technical-writting.html"><i class="fa fa-caret-rigth"></i>Technical Writting </a></li>
+      </ul>
+   </li>
+    <li class="supercollection">
+      <p style="font-weight: bold;">7th Semester</p>
+      <ul class="level-1">
+         <li><a href="https://www.sujanpdl.com.np/bsc-csit/advanced-java-programming.html"><i class="fa fa-caret-rigth"></i>
+Advanced Java Programming </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csi/data-warehousing-and-data-mining.html"><i class="fa fa-caret-rigth"></i>Data Warehousing and Data Mining</a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/principles-of-management.html"><i class="fa fa-caret-rigth"></i>Principles of Management </a></li>
+      </ul>
+   </li>
+    <li class="supercollection">
+      <p style="font-weight: bold;">8th Semester</p>
+      <ul class="level-1">
+         <li><a href="https://www.sujanpdl.com.np/bsc-csit/advanced-database.html"><i class="fa fa-caret-rigth"></i>Advanced Database</a></li>
+      </ul>
+   </li>
+</ul>
+          
+        </div>
+      </div>
+      </div>
+          <div class="print-header">
+            <div class="print-header-wrapper">
+            <header>
+                <div class="desktop-header">
+                  <h1>
+                  <div class="print-first-title"> Web Technology </div>
+                  <div class="print-second-title">Bachelors of Science in Computer Science and Information Technology (BSc. CSIT)</div>
+                </h1>
+                <img class="logo" src="https://sujanpdl.com.np/logo.png" alt="sujanpdl logo" />
+                </div>
+            </header>
+          </div>
+          </div>
+        
+      
+
+      
+      <div class="mobile-header">
+          <div id="page-top">
+            <a data-route="home" class="home-link" href="https://www.sujanpdl.com.np">
+              
+          <!-- <img class="homeicon en en-new" src="https://media.gcflearnfree.org/mobile/GCF_whitelogo.png" alt="GCFLearnFree Logo"> -->
+          <img class="homeicon en" style="margin-top: -50px;"src="https://www.sujanpdl.com.np/logo.png" alt="sujanpdl Logo">
+        
+            </a>
+            <!-- TODO need new non-polymer icon -->
+            <!-- <paper-icon-button on-tap="toggleNavCollapse" id="navdropdown" icon="menu"></paper-icon-button> --> 
+           
+            <i onclick="toggleNavCollapse()" class="material-icons menu-icon menu-icon-right">menu</i>
+           
+          </div>
+          <div id="navcollapse">
+            <div class="navcollapsecontent">
+              <a href="https://sujanpdl.com.np/bsc-csit/notes">Notes</a>
+              
+                
+              
+              <a href="https://sujanpdl.com.np/bsc-csit/about-us">About Us</a>
+              <a href="https://sujanpdl.com.np/bsc-csit/faq">FAQ</a>
+              <a href="https://sujanpdl.com.np/bsc-csit/contact-us">Contact Us</a>
+
+              <div class="language-picker">
+              
+                <a href="https://sujanpdl.com.np/bsc ">BSc.CSIT</a>
+                  <a href="#">FACULTY</a>
+                <a href="https://sujanpdl.com.np/dcom-notes">DCOM</a>
+            </div>
+            </div>
+          </div>
+        
+          
+      </div>
+
+  </header>
+</div>
+  <div id="background">
+    <div id="page-wrapper">
+      <div id="content-area">
+        <a class="back-to-tutorial-mobile" href="https://www.sujanpdl.com.np/bsc ">Back to Home</a>
+        <div>
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Header -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9291744844799241"
+     data-ad-slot="8071080147"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+          <div class="text-plus-page content-item">
+            <div id="lessoncontent">
+              
+              <div id="https://sujanpdl.com.np/bsc-csit/web-technology" class="lesson-block lesson" data-title="What is Web Technology?">
+              
+                <div id="first-divider" class="divider-box">
+                  <div class="infinite-scroll-divider"></div>
+                  <h4>Web Technology</h4>
+                </div>
+                
+                  <p class="scroll-trigger-top">https://edu.gcfglobal.org/en/computerbasics/about-this-tutorial/content/</p>
+
+          
+<h3> Introduction </h3><br/>
+Web technologies related to the interface between web servers and their clients. This
+information includes markup languages, programming interfaces and languages, and
+standards for document identification and display. In general web technology incorporates
+tools and techniques for web development.<br/><br/>
+Web Development is a broad term for the work involved in developing a web site for
+World Wide Web. This can include web design, web content development, client liaison,
+client-side/server-side scripting, web server and network security configuration, and ecommerce development. However, among web professionals, "web development" usually
+refers to the main non-design aspects of building web sites: writing markup and coding.
+Web development can range from developing the simplest static single page of plain text
+to the most complex web-based internet applications, electronic businesses, or social
+network services.<br/><br/>
+Web design is a broad term used to encompass the way that content (usually hypertext or
+hypermedia) is delivered to an end-user through the World Wide Web, using a web
+browser or other web-enabled software is displayed. The intent of web design is to create a
+website—a collection of online content including documents and applications that reside
+on a web servers. A website may include text, images, sounds and other content, and may
+be interactive.<br/><br/>
+For the typical web sites, the basic aspects of design are:<br/>
+<strong>The content:</strong> the substance, and information on the site should be relevant to the site and
+should target the area of the public that the website is concerned with.<br/>
+<strong>The usability:</strong> the site should be user-friendly, with the interface and navigation simple
+and reliable.<br/>
+<strong>The appearance:</strong> the graphics and text should include a single style that flows
+throughout, to show consistency. The style should be professional, appealing and relevant.<Br/>
+<strong>The structure: </strong>of the web site as a whole.<br/><br/>
+<strong>Internet and its Evolution:</strong><br/>
+Internet is a short form of the technical term internetwork, the result of interconnecting
+computer networks with special gateways or routers. The Internet is also often referred to
+as the Net. The Internet is a massive network of networks, a networking infrastructure. It
+connects millions of computers together globally, forming a network in which any
+computer can communicate with any other computer as long as they are both connected to
+the Internet. Information that travels over the Internet does so via a variety of languages
+known as protocols. The Internet is loosely connected compared with the randomized
+graph.<br/><br/>
+The Internet is a globally distributed network comprising many voluntarily interconnected
+autonomous networks. It operates without a central governing body. However, to maintain
+interoperability, all technical and policy aspects of the underlying core infrastructure and
+the principal name spaces are administered by the Internet Corporation for Assigned
+Names and Numbers (ICANN).<br/><br/>
+The history of the Internet starts in the 1950s and 1960s with the development of
+computers. This began with point-to-point communication between mainframe computers
+and terminals, expanded to point-to-point connections between computers and then early
+research into packet switching.<br/><br/>
+Since the mid-1990s the Internet has had a drastic impact on culture and commerce,
+including the rise of near instant communication by electronic mail, instant messaging,
+Voice over Internet Protocol (VoIP) "phone calls", two-way interactive video calls, and the
+World Wide Web with its discussion forums, blogs, social networking, and online
+shopping sites. (Just go through the brief history yourself)<Br/><br/>
+World Wide Web:<Br/>
+WWW is a system of interlinked hypertext documents accessed via the Internet. The
+World Wide Web, or simply Web, is a way of accessing information over the medium of
+the Internet. It is an information-sharing model that is built on top of the Internet. The Web
+uses the HTTP protocol, only one of the languages spoken over the Internet, to transmit
+data. Web services, which use HTTP to allow applications to communicate in order to
+exchange business logic, use the Web to share information. The Web also utilizes
+browsers, such as Internet Explorer or Firefox, to access Web documents called Web pages
+that are linked to each other via hyperlinks. Web documents also contain graphics, sounds,
+text and video.<Br/><br/>
+The Web is one of the services that runs on the Internet. It is a collection of textual
+documents and other resources, linked by hyperlinks and URLs, transmitted by web
+browsers and web servers. The Web is just one of the ways that information can be
+disseminated over the Internet, so the Web is just a portion of the Internet. In short, the
+Web can be thought of as an application "running" on the Internet<br/><br/>
+<strong>What is Hypertext?</strong><br/>
+Hypertext provides the links between different documents and different document types. In
+a hypertext document, links from one place in the document to another are included with
+the text. By selecting a link, you are able to jump immediately to another part of the
+document or even to a different document. In the WWW, links can go not only from one
+document to another, but from one computer to another
+<br />
+<br/>
+<h5  style="font-weight:bold; color:darkorange;" align="center">Download the pdf file  to get all the unit wise notes.<br/>Try to save your valueable time!<br/><a href="https://drive.google.com/file/d/1FRA31YJdWpRtSkywV-Ns2M_eEcAiODAQ/view?usp=sharing"><i style="font-size: 70px; " class="material-icons">
+cloud_download
+</i></a><br/>Click Here!</h5>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Header -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9291744844799241"
+     data-ad-slot="8071080147"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+                <br/><br/><br/><Br/><br/><br/><br/><br/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="push"></div>
+    </div>
+  </div>
+ 
+    <footer class="footer">
+  <div class="desktopfooter">
+    <div class="main-footer">
+      <div class="footer-drag-handle" onclick="toggleFooter()">
+        <i class="up-arrow material-icons">keyboard_arrow_up</i>
+        <i class="down-arrow material-icons">keyboard_arrow_down</i>
+      </div>
+      <!-- <div class="footer-section-headers"></div> -->
+      <div id="footerContent">
+        <div>
+          <div class="footer-links-container">
+            <div id="sectionOne" class="text-links">
+              <h4 class="footerheaders">Our Services</h4>
+             <a href="https://sujanpdl.com.np/bsc-csit/notes"><i class="fa fa-angle-double-right"></i>Notes</a></li><br/>
+<a href="https://sujanpdl.com.np/bsc-csit/pdf/bsc-syllabus.pdf"><i class="fa fa-angle-double-right"></i>Syallabus</a></li><br/>
+<a href="#"><i class="fa fa-angle-double-right"></i>PDF Files</a><br/>
+              
+            </div>
+            <div id="sectionTwo" class="text-links">
+              <h4 class="footerheaders">Useful Softwares</h4>
+            <a href=" https://www.sublimetext.com/3" target="_blank"><i class="fa fa-angle-double-right"></i>Sublime Text</a><br/>
+<a href=" https://notepad-plus-plus.org/download/v7.7.1.html" target="_blank"><i class="fa fa-angle-double-right"></i>Notepad++</a><br/>
+<a href="https://www.adobe.com/products/photoshop/free-trial-download.html " target="_blank"><i class="fa fa-angle-double-right"></i>Adobe Photoshop</a><br/>
+<a href="https://www.swi-prolog.org/download/stable " target="_blank"><i class="fa fa-angle-double-right"></i>SWI Prolog</a><br/>
+              
+            </div>
+            <div id="sectionThree" class="text-links">
+              <h4 class="footerheaders">Company</h4>
+<a href="https://sujanpdl.com.np/bsc-csit/about-us"><i class="fa fa-angle-double-right"></i>About Us</a><br/>
+<a href="https://sujanpdl.com.np/bsc-csit/privacy-policy"><i class="fa fa-angle-double-right"></i>Privacy Policy</a><br/>
+<a href="https://sujanpdl.com.np/bsc-csit/about-us"><i class="fa fa-angle-double-right"></i>Our Team</a><br/>
+<a href="https://sujanpdl.com.np/bsc-csit/faq"><i class="fa fa-angle-double-right"></i>FAQ's</a><br/>
+<a href="https://sujanpdl.com.np/bsc-csit/dmca"><i class="fa fa-angle-double-right"></i>DMCA</a><br/>
+             
+              
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+    <p id="copyright">&copy;2018 sujanpdl.com.np, Inc. All rights reserved.
+      Modified by: <a href="" target="_blank">Sujan Paudel</a>.
+      Powered by: <a href="https://edu.gcfglobal.org/" target="_blank">GCF Global</a></p><br/>.
+
+
+    </p>
+
+  </div>
+  <div class="mobilefooter">
+    <div class="footer-drag-handle" onclick="toggleMobileFooter()">
+      <i class="up-arrow material-icons">keyboard_arrow_up</i>
+      <i class="down-arrow material-icons">keyboard_arrow_down</i>
+    </div>
+    <div class="mobileFooterContent">
+      <a href="https://sujanpdl.com.np"><img class="globalicon" alt="sujanpdl.com.np" src="logo.png"></img></a>
+     <p id="copyright">&copy;2018 sujanpdl.com.np, Inc. All rights reserved.
+      Modified by: <a href="" target="_blank">Sujan Paudel</a>.
+      Powered by: <a href="https://edu.gcfglobal.org/" target="_blank">GCF Global</a></p><br/>.
+    </div>
+  </div>
+</footer>
+</body>
+</html>
