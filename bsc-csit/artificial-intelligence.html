@@ -1,0 +1,558 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="After reading this  our notes, you will be able to answer the question."/>
+ <link rel="Shortcut icon" type="image/png" href="https://dslv9ilpbe7p1.cloudfront.net/W3_nDU_sLjE0rj2ermPGFA_store_logo_image.png">
+  <title> Artificial Intelligence | BSc.CSIT</title>
+
+  <meta property="og:title" content="Artificial Intelligence Note  "/>
+  <meta property="og:description" content=" A very general mental capability that, among other things, involves the ability to reason, plan, solve problems, think abstractly, comprehend complex ideas, learn quickly and learn from experience. It is not merely book learning, a narrow academic skill, or test-taking smarts. Rather, it reflects a broader and deeper capability for comprehending our surroundings- making sense” of things, or “figuring out” what to do."/>
+  <meta property="og:type" content="gcfglobal.lesson" />
+  <meta property="og:image" content="https://www.sujanpdl.com.np/index.png"/>
+  <meta property="og:site_name" content="https://www.sujanpdl.com.np"/>
+  
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Kalam:400' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://edu.gcfglobal.org//styles/lessonpage-en.concat.css">
+
+  <script src="https://edu.gcfglobal.org//scripts/lessonpage-en.concat.js" type="text/javascript"></script>
+
+  
+  
+    <link href="https://sujanpdl.com.np/bsc-csit/artificial-intelligence" rel="canonical"/>
+<!----------Site Verification Tags------------->
+<meta name="google-site-verification" content="VEqcKveJLE1HXn6MLwfrDlGLwJwTG-dF3KDC3txYrDg" />
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139137650-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139137650-1');
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WDJJMDP');</script>
+<!-- End Google Tag Manager -->
+
+<!-----------Google Adsene------------>
+  <script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-9291744844799241",
+          enable_page_level_ads: true
+     });
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!----------End of Site Verifications------------------>
+  <script data-ad-client="ca-pub-9291744844799241" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body >
+<div class="header-wrapper">
+  <header>
+      <div id="page-header" class="desktop-header">
+        <div class="primary-header">
+        <div id="subjects-search">
+          <div id="subjects-search-box">
+
+            <div class="topnav-sls-container">
+              <a class="logo-link" href="https://www.sujanpdl.com.np">
+                <img  src="https://sujanpdl.com.np/logo.png" alt="sujanpdl Logo" height="300px" width="450px" style="margin-top: -98px; padding-right: 0px;" >
+                  
+                
+                  <!--<img class="logo logo-middle logo-en" src="https://media.gcflearnfree.org/assets/logo/logo.png" alt="GCFLearnFree Logo"> -->
+                
+              </a>
+            </div>
+
+          </div>
+          <div class="topnav-rightbox">
+            
+            <button class="subjects-select" onclick="toggleSubjectsDropdown()">
+              <i class="dropdown-hamburger material-icons">menu</i>
+              <p>Notes</p>
+            </button>
+
+            
+              <a onclick="window.print()"class="print-button header-btn header-print-link">
+                <i class="material-icons">print</i>
+              </a>
+            
+            
+            
+          </div>
+        </div>
+        </div>
+        <!-- <div class="header-divider"></div> -->
+        
+          <div class="sub-header">
+            <div id="corner-gradient-left"></div>
+            <div id="corner-gradient-right"></div>
+            <div class="headerfooter-content-wrapper">
+              <div id="subheaderContentContainer">
+              
+                <div class="header-nodesc en">
+                  <h1>
+                    
+                      
+                    
+                    <span id="current-lesson-title" style="font-size: 40px;">Artificial Intelligence </span>
+                  </h1>
+                  
+                    <a class="header-tutorial-link" href="https://www.sujanpdl.com.np/bsc ">Back to Home</a>
+                  
+                </div>
+              
+              <img id="header-img" class="header-image" src="https://edu.gcfglobal.org/images/city-aqua2.svg" alt="City Image">
+              </div>
+            </div>
+          </div>
+        
+      <div class="dropdown-wrapper">
+        <button class="dropdown-close-x" onclick="toggleSubjectsDropdown()">
+          <i class="material-icons">close</i>
+        </button>
+        <div class="dropdown-inner site-nav subjectMenuOption selectedMenuOption">
+          <h1>Select Your Notes:</h1>
+          <ul class="site-nav-contents site-nav">
+   <li class="supercollection">
+      <p style="font-weight: bold;">1st Semester</p>
+      <ul class="level-1">
+        <li><a href="https://www.sujanpdl.com.np/bsc-csit/introduction-to-information-technology.html"><i class="fa fa-angle-double-right"></i>Introduction to Information Technology</a>
+</li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/c-programming.html"><i class="fa fa-caret-rigth"></i>C Programming</a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/digital-logic.html"><i class="fa fa-angle-double-right"></i>Digital Logic</a>
+</li>
+
+        
+            
+      </ul>
+   </li>
+   <li class="supercollection">
+      <p style="font-weight: bold;">2nd Semester</p>
+      <ul class="level-1">
+        <li><a href="https://www.sujanpdl.com.np/bsc-csit/discrete-structure.html"><i class="fa fa-caret-rigth"></i>Discrete Structure</a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/object-oriented-programming.html"><i class="fa fa-caret-rigth"></i>Object Oriented Programming</a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/microprocessor.html"><i class="fa fa-caret-rigth"></i>Microprocessor</a></li>
+
+      </ul>
+   </li>
+   <li class="supercollection">
+        <p style="font-weight: bold;">3rd Semester</p>
+      <ul class="level-1">
+         <li><a href="https://www.sujanpdl.com.np/bsc-csit/data-structure-and-algorithms.html"><i class="fa fa-caret-rigth"></i>Data Structure and Algorithms </a></li>
+
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/computer-architecture.html"><i class="fa fa-caret-rigth"></i>Computer Architeecture </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/computer-graphics.html"><i class="fa fa-caret-rigth"></i>Computer Graphics </a></li>
+
+      </ul>
+   </li>
+    <li class="supercollection">
+        <p style="font-weight: bold;">4th Semester</p>
+      <ul class="level-1">
+        <li><a href="https://www.sujanpdl.com.np/bsc-csit/theory-of-computation.html"><i class="fa fa-caret-rigth"></i>Theory of Computation </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/computer-networks.html"><i class="fa fa-caret-rigth"></i>Computer Networks </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/operating-systems.html"><i class="fa fa-caret-rigth"></i>Operating Systems </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/database-management-system.html"><i class="fa fa-caret-rigth"></i>Database Management System </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/artificial-intelligence.html"><i class="fa fa-caret-rigth"></i>Artificial Intelligence </a></li>
+      </ul>
+   </li>
+  
+   <li class="supercollection">
+      <p style="font-weight: bold;">5th Semester</p>
+      <ul class="level-1">
+        <li><a href="https://www.sujanpdl.com.np/bsc-csit/design-and-analysis-of-algorithms.html"><i class="fa fa-caret-rigth"></i>Design and Analysis of Algorithms</a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/system-analysis-and-design.html"><i class="fa fa-caret-rigth"></i>
+System Analysis and Design </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/cryptography.html"><i class="fa fa-caret-rigth"></i>Cryptography</a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/simulation-and-modelling.html"><i class="fa fa-caret-rigth"></i>Simulation and Modelling </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/web-technology.html"><i class="fa fa-caret-rigth"></i>Web Technology</a></li>
+      </ul>
+   </li>
+   <li class="supercollection">
+      <p style="font-weight: bold;">6th Semester</p>
+      <ul class="level-1">
+        <li><a href="https://www.sujanpdl.com.np/bsc-csit/software-engineering.html"><i class="fa fa-caret-rigth"></i>Software Engineering </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/complier-design-and-construction.html"><i class="fa fa-caret-rigth"></i>Complier Design and Construction </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/e-governance.html"><i class="fa fa-caret-rigth"></i>E-Governance </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/net-centric-computing.html"><i class="fa fa-caret-rigth"></i>NET Centric Computing </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/technical-writting.html"><i class="fa fa-caret-rigth"></i>Technical Writting </a></li>
+      </ul>
+   </li>
+    <li class="supercollection">
+      <p style="font-weight: bold;">7th Semester</p>
+      <ul class="level-1">
+         <li><a href="https://www.sujanpdl.com.np/bsc-csit/advanced-java-programming.html"><i class="fa fa-caret-rigth"></i>
+Advanced Java Programming </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csi/data-warehousing-and-data-mining.html"><i class="fa fa-caret-rigth"></i>Data Warehousing and Data Mining</a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/principles-of-management.html"><i class="fa fa-caret-rigth"></i>Principles of Management </a></li>
+      </ul>
+   </li>
+    <li class="supercollection">
+      <p style="font-weight: bold;">8th Semester</p>
+      <ul class="level-1">
+         <li><a href="https://www.sujanpdl.com.np/bsc-csit/advanced-database.html"><i class="fa fa-caret-rigth"></i>Advanced Database</a></li>
+      </ul>
+   </li>
+</ul>
+          
+        </div>
+      </div>
+      </div>
+          <div class="print-header">
+            <div class="print-header-wrapper">
+            <header>
+                <div class="desktop-header">
+                  <h1>
+                  <div class="print-first-title"> Artificial Intelligence </div>
+                  <div class="print-second-title">Bachelors of Science in Computer Science and Information Technology (BSc. CSIT)</div>
+                </h1>
+                <img class="logo" src="https://sujanpdl.com.np/logo.png" alt="sujanpdl logo" />
+                </div>
+            </header>
+          </div>
+          </div>
+        
+      
+
+      
+      <div class="mobile-header">
+          <div id="page-top">
+            <a data-route="home" class="home-link" href="https://www.sujanpdl.com.np">
+              
+          <!-- <img class="homeicon en en-new" src="https://media.gcflearnfree.org/mobile/GCF_whitelogo.png" alt="GCFLearnFree Logo"> -->
+          <img class="homeicon en" style="margin-top: -50px;"src="https://www.sujanpdl.com.np/logo.png" alt="sujanpdl Logo">
+        
+            </a>
+            <!-- TODO need new non-polymer icon -->
+            <!-- <paper-icon-button on-tap="toggleNavCollapse" id="navdropdown" icon="menu"></paper-icon-button> --> 
+           
+            <i onclick="toggleNavCollapse()" class="material-icons menu-icon menu-icon-right">menu</i>
+           
+          </div>
+          <div id="navcollapse">
+            <div class="navcollapsecontent">
+              <a href="https://sujanpdl.com.np/bsc-csit/notes">Notes</a>
+              
+                
+              
+              <a href="https://sujanpdl.com.np/bsc-csit/about-us">About Us</a>
+              <a href="https://sujanpdl.com.np/bsc-csit/faq">FAQ</a>
+              <a href="https://sujanpdl.com.np/bsc-csit/contact-us">Contact Us</a>
+
+              <div class="language-picker">
+              
+                <a href="https://sujanpdl.com.np/bsc ">BSc.CSIT</a>
+                  <a href="#">FACULTY</a>
+                <a href="https://sujanpdl.com.np/dcom-notes">DCOM</a>
+            </div>
+            </div>
+          </div>
+        
+          
+      </div>
+
+  </header>
+</div>
+  <div id="background">
+    <div id="page-wrapper">
+      <div id="content-area">
+        <a class="back-to-tutorial-mobile" href="https://www.sujanpdl.com.np/bsc ">Back to Home</a>
+        <div>
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Header -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9291744844799241"
+     data-ad-slot="8071080147"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+          <div class="text-plus-page content-item">
+            <div id="lessoncontent">
+              
+              <div id="https://sujanpdl.com.np/bsc-csit/artificial-intelligence" class="lesson-block lesson" data-title="What is Artificial Intelligence?">
+              
+                <div id="first-divider" class="divider-box">
+                  <div class="infinite-scroll-divider"></div>
+                  <h4>Artificial Intelligence</h4>
+                </div>
+                
+                  <p class="scroll-trigger-top">https://edu.gcfglobal.org/en/computerbasics/about-this-tutorial/content/</p>
+
+          
+<h3> Introduction </h3><br/>
+<p style="font-weight: bold;">Scientists have proposed two major “consensus” definitions of intelligence:<br /><br />
+(i) from Mainstream Science on Intelligence (1994);<br /><br /></p>
+A very general mental capability that, among other things, involves the ability to reason, plan, solve problems, think abstractly, comprehend complex ideas, learn quickly and learn from experience. It is not merely book learning, a narrow academic skill, or test-taking smarts. Rather, it reflects a broader and deeper capability for comprehending our surroundings- making sense” of things, or “figuring out” what to do.<br /><br />
+<p style="font-weight: bold;">
+(ii) from Intelligence: Knowns and Unknowns (1995);<br /><br /></p>
+Individuals differ from one another in their ability to understand complex ideas, to adapt effectively to the environment, to learn from experience, to engage in various forms of reasoning, [and] to overcome obstacles by taking thought. Although these individual differences can be substantial, they are never entirely consistent: a given person’s intellectual performance will vary on different occasions, in different domains, as judged by different criteria. Concepts of “intelligence” are attempts to clarify and organize this complex set of phenomena.<br /><br />
+Thus, intelligence is:<br />
+- abtihliety to under<br />
+- abtihliety to create<br />
+- abtihliety to Learn from experience<br />
+- abtihliety to plan and execute complex tasks<br /></p>
+<h4 style="font-weight: bold; "># What is Artificial Intelligence?</h4>
+<p style="font-weight: bold;">"Giving machines ability to perform tasks normally associated with human
+intelligence."<br /></p>
+<p>AI is intelligence of machines and branch of computer science that aims to create it. AI consists of design of intelligent agents, which is a program that perceives its environment and takes action that maximizes its chance of success. With Ai it comes issues like deduction, reasoning, problem solving, knowledge representation, planning, learning, natural language processing, perceptron, etc.<br /><br /></p>
+
+<p style="font-weight: bold;">“Artificial Intelligence is the part of computer science concerned with designing intelligence computer systems, that is, systems that exhibit the characteristics we associate with intelligence in human behavior.”<br /><br /></p>
+Different definitions of AI are given by different books/writers. These definitions can be divided into two dimensions.<br />
+<p style="font-weight: bold;">
+(i) Systems that think like humans<br /></p>
+“The exciting new effort to make computers think…..machine with minds, in the full and literal sense.” (Haugeland, 1985)<br />
+“[The automaton of] activities that we associate with human thinking, activities such as decision-making, problem solving, learning…..” (Bellman, 1978)<br /><br />
+<p style="font-weight: bold;">
+(ii) Systems that think rationally <br /></p>
+“The study of mental faculties through the use of computational models.” (Charniak and McDermott, 1985)<br />
+“The study of the computations that make it
+possible to perceive, reason, and act.” (Winston, 1992) <br /> <br />
+<p style="font-weight: bold;">
+(iii) Systems that act like humans <br /></p>
+“ The art of creating machines that perform functions that require intelligence when performed by people.” (Kurzweil, 1990)<br />
+“The study of how to make computer do things at which, at the moment, people are better.” (Rich and Knight, 1991)
+<br /><br />
+<p style="font-weight: bold;">
+(iv) Systems that act rationally <br /></p>>
+“Computational Intelligence is the study of the design of intelligent agents.” (Poole et al., 1998)<br />
+“AI… is concerned with intelligent behavior in artifacts.” (Nilsson, 1998) <br /><br />
+Top dimension is concerned with thought processes and reasoning, where as bottom dimension addresses the behavior.<br />
+The definition on the left measures the success in terms of fidelity of human performance, whereas definitions on the right measure an ideal concept of intelligence, which is called rationality.<br />
+Human-centered approaches must be an empirical science, involving hypothesis and experimental confirmation. A rationalist approach involves a combination of mathematics and engineering.<br /><br />
+<h4 style="font-weight: bold; font-size:30px;"># Acting Humanly: The Turing Test Approach</h4>
+<p>The Turing test, proposed by Alan Turing (1950) was designed to convince the people that whether a particular machine can think or not. He suggested a test based on indistinguishability from undeniably intelligent entities- human beings.The test involves an interrogator who interacts with one human and one machine. Within a given time the interrogator has to find out which of the two the human is, and which one the machine.<br />
+The computer passes the test if a human interrogator after posing some written questions, cannot tell whether the written response come from human or not.<br />
+<p style="font-weight: bold;">
+To pass a Turing test, a computer must have following capabilities:<br />
+- Natural Language Processing: Must be able to communicate successfully in English<br />
+- Knowledge representation: To store what it knows and hears.<br />
+- Automated reasoning: Answer the Questions based on the stored information.<br />
+- Machine learning: Must be able to adapt in new circumstances.</p><br />
+Turing test avoid the physical interaction with human interrogator. Physical simulation of human beings is not necessary for testing the intelligence.<br />
+The total Turing test includes video signals and manipulation capability so that the interrogator can test the subject’s perceptual abilities and object manipulation ability. To pass the total Turing test computer must have following additional capabilities:<br />
+- Computer Vision: To perceive objects<br />
+- Robotics: To manipulate objects and move<br /><br />
+<p style="font-weight: bold;">Thinking Humanly: Cognitive modeling approach</p><p>
+If we are going to say that a given program thinks like a human, we must have some way of determining how humans think. We need to get inside the actual workings of human minds. There are two ways to do this:<br />
+- through introspection: catch our thoughts while they go by<br />
+- through psychological experiments.<br />
+Once we have precise theory of mind, it is possible to express the theory as a computer program.<br />
+The field of cognitive science brings together computer models from AI and experimental techniques from psychology to try to construct precise and testable theories of the workings of the human mind.<br /><br />
+<p style="font-weight: bold;">Think rationally: The laws of thought approach</p><p>
+Aristotal was one of the first who attempt to codify the right thinking that is irrefutable reasoning process. He gave Syllogisms that always yielded correct conclusion when correct premises are given.<br />
+For example:<br />
+Ram is a man<br />
+All men are mortal<br />
+=> Ram is mortal<br /><br />
+These law of thought were supposed to govern the operation of mind: This study initiated the field of logic. The logicist tradition in AI hopes to create intelligent systems using logic programming. However there are two obstacles to this approach. First, It is not easy to take informal knowledge and state in the formal terms required by logical notation, particularly when knowledge is not 100% certain. Second, solving problem principally is different from doing it in practice. Even problems with certain dozens of fact may exhaust the computational resources of any computer unless it has some guidance as which reasoning step to try first.<br />
+<p style="font-weight: bold;">
+Acting Rationally: The rational Agent approach:
+</p><p>
+Agent is something that acts.<br />
+Computer agent is expected to have following attributes:<br />
+- Autonomous control<br />
+- Perceiving their environment<br />
+- Persisting over a prolonged period of time<br />
+- Adapting to change<br />
+- And capable of taking on another’s goal<br /><br /></p>
+Rational behavior: doing the right thing.<br />
+The right thing: that which is expected to maximize goal achievement, given the available information.<br /><br />
+Rational Agent is one that acts so as to achieve the best outcome or, when there is uncertainty, the best expected outcome.<br /><br />
+In the “laws of thought” approach to AI, the emphasis was given to correct inferences. Making correct inferences is sometimes part of being a rational agent, because one way to act rationally is to reason logically to the conclusion and act on that conclusion. On the other hand, there are also some ways of acting rationally that cannot be said to involve inference. For Example, recoiling from a hot stove is a reflex action that usually more successful than a slower action taken after careful deliberation.<br /><br />
+<h4 style="font-weight: bold;"># Advantages:</h4><p>
+- It is more general than laws of thought approach, because correct inference is just one of several mechanisms for achieving rationality.
+- It is more amenable to scientific development than are approaches based on human behavior or human thought because the standard of rationality is clearly defined and completely general.<br /><br /></p>
+<h4 style="font-weight: bold;"># Characteristics of A.I. Programs</h4>
+i) Symbolic Reasoning: reasoning about objects represented by symbols, and their properties and relationships, not just numerical calculations.<br />
+ii) Knowledge: General principles are stored in the program and used for reasoning about novel situations.<br />
+iii) Search: a "weak method" for finding a solution to a problem when no direct method exists.<br />
+iv) Problem: combinatoric explosion of possibilities.<br />
+v) Flexible Control: Direction of processing can be changed by changing facts in the environment.<br /><br />
+<h4 style="font-weight: bold;"># Foundations of AI:</h4><br />
+<p style="font-weight: bold;">
+Philosophy:<br /></p>
+Logic, reasoning, mind as a physical system, foundations of learning, language and rationality.<br /><br />
+Where does knowledge come from?<br />
+How does knowledge lead to action?<br />
+How does mental mind arise from physical brain?<br />
+Can formal rules be used to draw valid conclusions?<br /><br />
+<p style="font-weight: bold;">
+Mathematics:<br /></p>
+Formal representation and proof algorithms, computation, undecidability, intractability, probability.<br /><br />
+What are the formal rules to draw the valid conclusions?<br />
+What can be computed?<br />
+How do we reason with uncertain information?<br /><br />
+<p style="font-weight: bold;">
+Psychology:<br /></p>
+Adaptation, phenomena of perception and motor control.
+<br /><br />
+How humans and animals think and act?<br /><br />
+<p style="font-weight: bold;">
+Economics:<br /></p>
+Formal theory of rational decisions, game theory, operation research.<br /><br />
+How should we make decisions so as to maximize payoff?<br />
+How should we do this when others may not go along?<br />
+How should we do this when the payoff may be far in future?<br /><br />
+<p style="font-weight: bold;">
+Linguistics:</p>
+Knowledge representation, grammar<br /><br />
+How does language relate to thought?<br /><br />
+<p style="font-weight: bold;">
+Neuroscience:</p><br />
+Physical substrate for mental activities<br /><br />
+How do brains process information?<br /><br />
+<p style="font-weight: bold;">
+Control theory:</p><br />
+Homeostatic systems, stability, optimal agent design<br /><br />
+How can artifacts operate under their own control?<br /><br />
+<h4 style="font-weight: bold;">Brief history of AI</h4>
+
+<p>
+i) 1943: <br />Warren Mc Culloch and Walter Pitts: a model of artificial boolean neurons to perform computations.<br />
+- First steps toward connectionist computation and learning (Hebbian learning).<br />
+- Marvin Minsky and Dann Edmonds (1951) constructed the first neural network computer<br /><br />
+ii) 1950: Alan Turing’s “Computing Machinery and Intelligence”<br />
+- First complete vision of AI.<br /><br />
+<p style="font-weight: bold;">The birth of AI (1956):</p><p>
+- Dartmouth Workshop bringing together top minds on automata theory, neural nets and the study of intelligence.<br />
+- Allen Newell and Herbert Simon: The logic theorist (first nonnumeric thinking program used for theorem proving)<br />
+- For the next 20 years the field was dominated by these participants.<br />
+<p style="font-weight: bold;">Great expectations (1952-1969):</p>><p>
+– Newell and Simon introduced the General Problem Solver.<br />
+- Imitation of human problem-solving<br />
+– Arthur Samuel (1952) investigated game playing (checkers)
+with great success.<br /><br />
+– John McCarthy(1958) :<br />
+- Inventor of Lisp (second-oldest high-level language)<br />
+- Logic oriented, Advice Taker (separation between knowledge
+and reasoning)<br /><br />
+– Marvin Minsky (1958)<br />
+- Introduction of microworlds that appear to require
+intelligence to solve: e.g. blocks- world.<br />
+- Anti-logic orientation, society of the mind.<br /><br />
+<p style="font-weight: bold;">Collapse in AI research (1966 - 1973):</p>
+- Progress was slower than expected.<br />
+- Unrealistic predictions.<br />
+- Some systems lacked scalability.<br />
+- Combinatorial explosion in search.<br />
+- Fundamental limitations on techniques and representations.<br />
+- Minsky and Papert (1969) Perceptrons.<br /><br />
+<p style="font-weight: bold;">AI revival through knowledge-based systems (1969-1970):</p>
+- General-purpose vs. domain specific<br />
+- E.g. the DENDRAL project (Buchanan et al. 1969) First successful knowledge intensive system.<br />
+<br /><br />
+Expert ystems<br />
+- MYCIN to diagnose blood infections (Feigenbaum et al.)<br />
+- Introduction of uncertainty in reasoning.<br /><br />
+Increase in knowledge representation research.<br />
+- Logic, frames, semantic nets, …<br /><br />
+<p style="font-weight: bold;">AI becomes an industry (1980 - present):</p>
+- R1 at DEC (McDermott, 1982)<br />
+- Fifth generation project in Japan (1981)<br />
+- American response …<br /><br /><br /><br />
+
+<br />
+<br/>
+<h5  style="font-weight:bold; color:darkorange;" align="center">Download the pdf file  to get all the unit wise notes.<br/>Try to save your valueable time!<br/><a href="https://drive.google.com/file/d/1YOEhe42BXH5A7CjbNgwrsHVKWgFbnaeK/view?usp=sharing"><i style="font-size: 70px; " class="material-icons">
+cloud_download
+</i></a><br/>Click Here!</h5>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Header -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9291744844799241"
+     data-ad-slot="8071080147"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+                <br/><br/><br/><Br/><br/><br/><br/><br/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="push"></div>
+    </div>
+  </div>
+ 
+    <footer class="footer">
+  <div class="desktopfooter">
+    <div class="main-footer">
+      <div class="footer-drag-handle" onclick="toggleFooter()">
+        <i class="up-arrow material-icons">keyboard_arrow_up</i>
+        <i class="down-arrow material-icons">keyboard_arrow_down</i>
+      </div>
+      <!-- <div class="footer-section-headers"></div> -->
+      <div id="footerContent">
+        <div>
+          <div class="footer-links-container">
+            <div id="sectionOne" class="text-links">
+              <h4 class="footerheaders">Our Services</h4>
+             <a href="https://sujanpdl.com.np/bsc-csit/notes"><i class="fa fa-angle-double-right"></i>Notes</a></li><br/>
+<a href="https://sujanpdl.com.np/bsc-csit/pdf/bsc-syllabus.pdf"><i class="fa fa-angle-double-right"></i>Syallabus</a></li><br/>
+<a href="#"><i class="fa fa-angle-double-right"></i>PDF Files</a><br/>
+              
+            </div>
+            <div id="sectionTwo" class="text-links">
+              <h4 class="footerheaders">Useful Softwares</h4>
+            <a href=" https://www.sublimetext.com/3" target="_blank"><i class="fa fa-angle-double-right"></i>Sublime Text</a><br/>
+<a href=" https://notepad-plus-plus.org/download/v7.7.1.html" target="_blank"><i class="fa fa-angle-double-right"></i>Notepad++</a><br/>
+<a href="https://www.adobe.com/products/photoshop/free-trial-download.html " target="_blank"><i class="fa fa-angle-double-right"></i>Adobe Photoshop</a><br/>
+<a href="https://www.swi-prolog.org/download/stable " target="_blank"><i class="fa fa-angle-double-right"></i>SWI Prolog</a><br/>
+              
+            </div>
+            <div id="sectionThree" class="text-links">
+              <h4 class="footerheaders">Company</h4>
+<a href="https://sujanpdl.com.np/bsc-csit/about-us"><i class="fa fa-angle-double-right"></i>About Us</a><br/>
+<a href="https://sujanpdl.com.np/bsc-csit/privacy-policy"><i class="fa fa-angle-double-right"></i>Privacy Policy</a><br/>
+<a href="https://sujanpdl.com.np/bsc-csit/about-us"><i class="fa fa-angle-double-right"></i>Our Team</a><br/>
+<a href="https://sujanpdl.com.np/bsc-csit/faq"><i class="fa fa-angle-double-right"></i>FAQ's</a><br/>
+<a href="https://sujanpdl.com.np/bsc-csit/dmca"><i class="fa fa-angle-double-right"></i>DMCA</a><br/>
+             
+              
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+    <p id="copyright">&copy;2018 sujanpdl.com.np, Inc. All rights reserved.
+      Modified by: <a href="" target="_blank">Sujan Paudel</a>.
+      Powered by: <a href="https://edu.gcfglobal.org/" target="_blank">GCF Global</a></p><br/>.
+
+
+    </p>
+
+  </div>
+  <div class="mobilefooter">
+    <div class="footer-drag-handle" onclick="toggleMobileFooter()">
+      <i class="up-arrow material-icons">keyboard_arrow_up</i>
+      <i class="down-arrow material-icons">keyboard_arrow_down</i>
+    </div>
+    <div class="mobileFooterContent">
+      <a href="https://sujanpdl.com.np"><img class="globalicon" alt="sujanpdl.com.np" src="logo.png"></img></a>
+     <p id="copyright">&copy;2018 sujanpdl.com.np, Inc. All rights reserved.
+      Modified by: <a href="" target="_blank">Sujan Paudel</a>.
+      Powered by: <a href="https://edu.gcfglobal.org/" target="_blank">GCF Global</a></p><br/>.
+    </div>
+  </div>
+</footer>
+</body>
+</html>

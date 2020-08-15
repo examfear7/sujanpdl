@@ -1,0 +1,508 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="After reading this  our notes, you will be able to answer the question."/>
+ <link rel="Shortcut icon" type="image/png" href="https://dslv9ilpbe7p1.cloudfront.net/W3_nDU_sLjE0rj2ermPGFA_store_logo_image.png">
+  <title>System Analysis and Design | BSc.CSIT</title>
+
+  <meta property="og:title" content="System Analysis and Design  Note  "/>
+  <meta property="og:description" content=" A system is a collection of components (subsystems) that work together to realize some
+objective. For example, the library system contains librarians, books, and periodicals as
+components to provide knowledge for its members."/>
+  <meta property="og:type" content="gcfglobal.lesson" />
+  <meta property="og:image" content="https://www.sujanpdl.com.np/index.png"/>
+  <meta property="og:site_name" content="https://www.sujanpdl.com.np"/>
+  
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Kalam:400' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://edu.gcfglobal.org//styles/lessonpage-en.concat.css">
+
+  <script src="https://edu.gcfglobal.org//scripts/lessonpage-en.concat.js" type="text/javascript"></script>
+
+  
+  
+ <link href="https://www.sujanpdl.com.np/bsc-csit/system-analysis-and-design" rel="canonical"/>
+<!----------Site Verification Tags------------->
+<meta name="google-site-verification" content="VEqcKveJLE1HXn6MLwfrDlGLwJwTG-dF3KDC3txYrDg" />
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139137650-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139137650-1');
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WDJJMDP');</script>
+<!-- End Google Tag Manager -->
+
+<!-----------Google Adsene------------>
+  <script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-9291744844799241",
+          enable_page_level_ads: true
+     });
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!----------End of Site Verifications------------------>
+  <script data-ad-client="ca-pub-9291744844799241" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body >
+<div class="header-wrapper">
+  <header>
+      <div id="page-header" class="desktop-header">
+        <div class="primary-header">
+        <div id="subjects-search">
+          <div id="subjects-search-box">
+
+            <div class="topnav-sls-container">
+              <a class="logo-link" href="https://www.sujanpdl.com.np">
+               <img  src="https://sujanpdl.com.np/logo.png" alt="sujanpdl Logo" height="300px" width="450px" style="margin-top: -98px; padding-right: 0px;" >
+                  
+                
+                  <!--<img class="logo logo-middle logo-en" src="https://media.gcflearnfree.org/assets/logo/logo.png" alt="GCFLearnFree Logo"> -->
+                
+              </a>
+            </div>
+
+          </div>
+          <div class="topnav-rightbox">
+            
+            <button class="subjects-select" onclick="toggleSubjectsDropdown()">
+              <i class="dropdown-hamburger material-icons">menu</i>
+              <p>Notes</p>
+            </button>
+
+            
+              <a onclick="window.print()"class="print-button header-btn header-print-link">
+                <i class="material-icons">print</i>
+              </a>
+            
+            
+            
+          </div>
+        </div>
+        </div>
+        <!-- <div class="header-divider"></div> -->
+        
+          <div class="sub-header">
+            <div id="corner-gradient-left"></div>
+            <div id="corner-gradient-right"></div>
+            <div class="headerfooter-content-wrapper">
+              <div id="subheaderContentContainer">
+              
+                <div class="header-nodesc en">
+                  <h1>
+                    
+                      
+                    
+                    <span id="current-lesson-title" style="font-size: 40px;">Principles of Management</span>
+                  </h1>
+                  
+                    <a class="header-tutorial-link" href="https://www.sujanpdl.com.np/bsc ">Back to Home</a>
+                  
+                </div>
+              
+              <img id="header-img" class="header-image" src="https://edu.gcfglobal.org/images/city-aqua2.svg" alt="City Image">
+              </div>
+            </div>
+          </div>
+        
+      <div class="dropdown-wrapper">
+        <button class="dropdown-close-x" onclick="toggleSubjectsDropdown()">
+          <i class="material-icons">close</i>
+        </button>
+        <div class="dropdown-inner site-nav subjectMenuOption selectedMenuOption">
+          <h1>Select Your Notes:</h1>
+          <ul class="site-nav-contents site-nav">
+   <li class="supercollection">
+      <p style="font-weight: bold;">1st Semester</p>
+      <ul class="level-1">
+        <li><a href="https://www.sujanpdl.com.np/bsc-csit/introduction-to-information-technology.html"><i class="fa fa-angle-double-right"></i>Introduction to Information Technology</a>
+</li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/c-programming.html"><i class="fa fa-caret-rigth"></i>C Programming</a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/digital-logic.html"><i class="fa fa-angle-double-right"></i>Digital Logic</a>
+</li>
+
+        
+            
+      </ul>
+   </li>
+   <li class="supercollection">
+      <p style="font-weight: bold;">2nd Semester</p>
+      <ul class="level-1">
+        <li><a href="https://www.sujanpdl.com.np/bsc-csit/discrete-structure.html"><i class="fa fa-caret-rigth"></i>Discrete Structure</a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/object-oriented-programming.html"><i class="fa fa-caret-rigth"></i>Object Oriented Programming</a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/microprocessor.html"><i class="fa fa-caret-rigth"></i>Microprocessor</a></li>
+
+      </ul>
+   </li>
+   <li class="supercollection">
+        <p style="font-weight: bold;">3rd Semester</p>
+      <ul class="level-1">
+         <li><a href="https://www.sujanpdl.com.np/bsc-csit/data-structure-and-algorithms.html"><i class="fa fa-caret-rigth"></i>Data Structure and Algorithms </a></li>
+
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/computer-architecture.html"><i class="fa fa-caret-rigth"></i>Computer Architeecture </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/computer-graphics.html"><i class="fa fa-caret-rigth"></i>Computer Graphics </a></li>
+
+      </ul>
+   </li>
+    <li class="supercollection">
+        <p style="font-weight: bold;">4th Semester</p>
+      <ul class="level-1">
+        <li><a href="https://www.sujanpdl.com.np/bsc-csit/theory-of-computation.html"><i class="fa fa-caret-rigth"></i>Theory of Computation </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/computer-networks.html"><i class="fa fa-caret-rigth"></i>Computer Networks </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/operating-systems.html"><i class="fa fa-caret-rigth"></i>Operating Systems </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/database-management-system.html"><i class="fa fa-caret-rigth"></i>Database Management System </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/artificial-intelligence.html"><i class="fa fa-caret-rigth"></i>Artificial Intelligence </a></li>
+      </ul>
+   </li>
+  
+   <li class="supercollection">
+      <p style="font-weight: bold;">5th Semester</p>
+      <ul class="level-1">
+        <li><a href="https://www.sujanpdl.com.np/bsc-csit/design-and-analysis-of-algorithms.html"><i class="fa fa-caret-rigth"></i>Design and Analysis of Algorithms</a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/system-analysis-and-design.html"><i class="fa fa-caret-rigth"></i>
+System Analysis and Design </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/cryptography.html"><i class="fa fa-caret-rigth"></i>Cryptography</a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/simulation-and-modelling.html"><i class="fa fa-caret-rigth"></i>Simulation and Modelling </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/web-technology.html"><i class="fa fa-caret-rigth"></i>Web Technology</a></li>
+      </ul>
+   </li>
+   <li class="supercollection">
+      <p style="font-weight: bold;">6th Semester</p>
+      <ul class="level-1">
+        <li><a href="https://www.sujanpdl.com.np/bsc-csit/software-engineering.html"><i class="fa fa-caret-rigth"></i>Software Engineering </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/complier-design-and-construction.html"><i class="fa fa-caret-rigth"></i>Complier Design and Construction </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/e-governance.html"><i class="fa fa-caret-rigth"></i>E-Governance </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/net-centric-computing.html"><i class="fa fa-caret-rigth"></i>NET Centric Computing </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/technical-writting.html"><i class="fa fa-caret-rigth"></i>Technical Writting </a></li>
+      </ul>
+   </li>
+    <li class="supercollection">
+      <p style="font-weight: bold;">7th Semester</p>
+      <ul class="level-1">
+         <li><a href="https://www.sujanpdl.com.np/bsc-csit/advanced-java-programming.html"><i class="fa fa-caret-rigth"></i>
+Advanced Java Programming </a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csi/data-warehousing-and-data-mining.html"><i class="fa fa-caret-rigth"></i>Data Warehousing and Data Mining</a></li>
+<li><a href="https://www.sujanpdl.com.np/bsc-csit/principles-of-management.html"><i class="fa fa-caret-rigth"></i>Principles of Management </a></li>
+      </ul>
+   </li>
+    <li class="supercollection">
+      <p style="font-weight: bold;">8th Semester</p>
+      <ul class="level-1">
+         <li><a href="https://www.sujanpdl.com.np/bsc-csit/advanced-database.html"><i class="fa fa-caret-rigth"></i>Advanced Database</a></li>
+      </ul>
+   </li>
+</ul>
+          
+        </div>
+      </div>
+      </div>
+          <div class="print-header">
+            <div class="print-header-wrapper">
+            <header>
+                <div class="desktop-header">
+                  <h1>
+                  <div class="print-first-title">System Analysis and Design</div>
+                  <div class="print-second-title">Bachelors of Science in Computer Science and Information Technology (BSc. CSIT)</div>
+                </h1>
+                <img class="logo" src="https://sujanpdl.com.np/logo.png" alt="sujanpdl logo" />
+                </div>
+            </header>
+          </div>
+          </div>
+        
+      
+
+      
+      <div class="mobile-header">
+          <div id="page-top">
+            <a data-route="home" class="home-link" href="https://www.sujanpdl.com.np">
+              
+          <!-- <img class="homeicon en en-new" src="https://media.gcflearnfree.org/mobile/GCF_whitelogo.png" alt="GCFLearnFree Logo"> -->
+          <img class="homeicon en" style="margin-top: -50px;"src="https://www.sujanpdl.com.np/logo.png" alt="sujanpdl Logo">
+        
+            </a>
+            <!-- TODO need new non-polymer icon -->
+            <!-- <paper-icon-button on-tap="toggleNavCollapse" id="navdropdown" icon="menu"></paper-icon-button> --> 
+           
+            <i onclick="toggleNavCollapse()" class="material-icons menu-icon menu-icon-right">menu</i>
+           
+          </div>
+          <div id="navcollapse">
+            <div class="navcollapsecontent">
+              <a href="https://sujanpdl.com.np/bsc-csit/notes">Notes</a>
+              
+                
+              
+              <a href="https://sujanpdl.com.np/bsc-csit/about-us">About Us</a>
+              <a href="https://sujanpdl.com.np/bsc-csit/faq">FAQ</a>
+              <a href="https://sujanpdl.com.np/bsc-csit/contact-us">Contact Us</a>
+
+              <div class="language-picker">
+              
+                <a href="https://sujanpdl.com.np/bsc ">BSc.CSIT</a>
+                  <a href="#">FACULTY</a>
+                <a href="https://sujanpdl.com.np/dcom-notes">DCOM</a>
+            </div>
+            </div>
+          </div>
+        
+          
+      </div>
+
+  </header>
+</div>
+  <div id="background">
+    <div id="page-wrapper">
+      <div id="content-area">
+        <a class="back-to-tutorial-mobile" href="https://www.sujanpdl.com.np/bsc ">Back to Home</a>
+        <div>
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Header -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9291744844799241"
+     data-ad-slot="8071080147"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+          <div class="text-plus-page content-item">
+            <div id="lessoncontent">
+              
+              <div id="https://sujanpdl.com.np/bsc-sit/system-analysis-and-design" class="lesson-block lesson" data-title="What is System Analysis and Design?">
+              
+                <div id="first-divider" class="divider-box">
+                  <div class="infinite-scroll-divider"></div>
+                  <h4>System Analysis and Design</h4>
+                </div>
+                
+                 
+
+
+          
+<h3> Introduction </h3><br/>
+
+<strong>What is System?</strong><br/>
+
+A system is a collection of components (subsystems) that work together to realize some
+objective. For example, the library system contains librarians, books, and periodicals as
+components to provide knowledge for its members.<br/>
+<img src="http://www.padakuu.com/articles/images/cover/cover-180911063244.jpg"><br/>
+<p align="center"> Fig: Basic System Model</p><br/>
+Every system has three activities or functions. These activities are input, processing and
+output.<br/>
+<strong>• Input: </strong>It involves capturing and assembling elements that enter the system to be
+processed. Inputs to the system are anything to be captured by the system from its
+environment. For example, raw materials.<br/>
+<strong>• Processing: It involves transformation processes that convert input to output. For
+example, a manufacturing process.<br/>
+<strong>• Output:</strong> It involves transferring elements that have been produced by a
+transformation process to their ultimate destinations. Outputs are the things produced
+by the system and sent into its environment. For example, finished products.
+The system also includes other two additional activities. These activities include feedback
+and control.<br/>
+<strong>• Feedback:</strong> It is data about the performance of a system. It is the idea of monitoring
+the current system output and comparing it to the system goal. Any variation from the
+goal are then fed back in to the system and used to adjust it to ensure that it meets its
+goal. For example, data about sales performance is feedback to a sales manager.<br/>
+<strong>• Control:</strong> It involves monitoring and evaluating feedback to determine whether a
+system is moving toward the achievement of its goals. The control function then
+makes necessary adjustments to a system’s input and processing components to
+ensure that it produces proper output. For example, a sales manager exercises control
+when reassigning salespersons to new sales territories after evaluating feedback about
+their sales performance.<br/><br/>
+Theoretical approaches to systems have introduced many generalized principles. Goal
+setting is one such principle. It defines exactly what the system is supposed to do. There
+are principles concerned with system structure and behavior. System boundary is one
+such a principle. This defines the components that make up the system. Anything outside
+the system boundary is known as system environment. A system can be made up of any
+number of subsystems. Each subsystem carries out part of the system function i.e. part of
+the system goal. The subsystems communicate by passing messages between themselves.
+Several systems may share the same environment. Some of these systems may be
+connected to one another by means of a shared boundary, or interface. A system that
+interacts with other systems in its environment is called open system. Finally, a system
+that has the ability to change itself or environment in order to survive is called an
+adaptive system.<br/><br/>
+<strong>What is an Information System?</strong><br/>
+In a simplest sense, a system that provides information to people in an organization is
+called information system (IS).<br/><br/>
+Information systems in organizations capture and manage data to produce useful
+information that supports an organization and its employees, customers, suppliers and
+partners. So, many organizations consider information system to be the essential one.
+Information systems produce information by using data about significant people,
+places, and things from within the organization and/or from the external environment to
+make decisions, control operations, analyze problems, and create new products or
+services. Information is the data shaped into a meaningful form. Data, on the other
+hand, are the collection of raw facts representing events occurring in organizations or the
+environment before they have been organized and arranged into a form that people can
+understand and use.<br/><br/>
+The three activities to produce information in an information system are input,
+processing, and output. Input captures or collects row data from within the organization
+or from its external environment for processing. Processing converts these row data into
+the meaningful information. Output transfers this information to the people who will use
+it or to the activities for which it will be used. Information systems also require feedback,
+which is used to monitor the current information system output and compare it to the
+system goal.<br/><br/>
+The two types of information systems are formal and informal. Formal information
+systems are based on accepted and fixed definitions of data and procedures for collecting,
+storing, processing, disseminating, and using these data with predefined rules. Informal
+information systems, in contrast, relay on unstated rules.
+Formal information systems can be manual as well as computer based. Manual
+information systems use paper-and-pencil technology. In contrast, computer-based
+information systems (CBIS) relay on computer hardware and software for processing
+and disseminating information.<br/><br/>
+<strong>Types of Information Systems</strong><br/>
+In practice there are several classes of information systems in organizations. Each class
+serves the needs of different types of users. These are:<br/>
+1. Transaction processing system (TPS)<br/>
+2. Management information system (MIS)<br/>
+3. Decision support system (DSS)<br/>
+4. Executive information system (EIS)<br/>
+5. Expert system<br/>
+6. Communication and collaboration system<br/>
+7. Office automation system.<br/><br/>
+<strong>Transaction Processing Systems (TPSs)</strong><br/>
+These are the computerized systems that perform and records the daily routine
+transactions necessary to conduct business. These systems serve the operational level of
+the organization. Some examples include sales order entry, hotel reservation systems,
+payroll, employee record keeping, and shipping.<br/><br/>
+Transaction processing systems are central to a business. TPS failure for a few hours
+can cause a firm’s demise and perhaps other firms linked to it. Managers need TPS to
+monitor the status of internal operations and the firm’s relations with external
+environment. TPS are also major producers of information for the other types of systems.
+Online transaction processing systems (OLTPS) is an interactive data processing
+system that involves a direct connection between TPS programs and users. As soon as a
+single transaction is entered into a computer system, the program interacts immediately
+with the user for that transaction. It is often known as the live system where there is no
+time lag between data creation and its processing. A good example of this system is
+online ticket reservation system.<br/><br/>
+<strong>Management Information Systems (MISs)</strong><br/>
+These are the information systems at the management level of an organization and serve
+management-level functions like planning, controlling, and decision-making. These
+systems provide reports that are usually generated on a predetermined schedule and
+appear in prearranged format. Typically, these systems use internal data provided by the
+transaction processing systems. These systems are used for structured decision-making
+and in some cases for semi-structured decision making as well. Salary analysis and sales
+reporting are the examples in which MIS can be used.<br/><br/>
+<strong>Decision Support Systems (DSSs)</strong><br/>
+These systems also serve at the management level of the organization. These systems
+combine data and sophisticated analytical models or data analysis tools to support semistructured and unstructured decision-making. These systems use internal information
+from TPS and MIS, and often information from external sources, such as current stock
+prices or product prices of competitors. DSS have more analytical power than other
+systems. Contract cost analysis is an example in which DSS can be used.<br/><br/>
+<strong>Executive Information Systems (EISs)</strong><br/>
+These systems are also called executive support systems (ESSs) and serve the strategic
+level of the organization. These systems are designed to address unstructured decision
+making through advanced graphics and communication. These systems incorporate data
+about external events such as new tax laws or competitors, but they also draw
+summarized information from internal MIS and DSS.These systems are not designed to solve a specific problem but they provide ageneralized computing and telecommunication capacity that can be applied to a changing
+array of problems. 5-year operating plan is an example in which EIS can be used.
+
+
+<br />
+<br/>
+<h5  style="font-weight:bold; color:darkorange;" align="center">Download the pdf file  to get all the unit wise notes.<br/>Try to save your valueable time!<br/><a href="https://drive.google.com/file/d/1SttSxQisVDNTSB-YbREmDqOU04XdwWg8/view?usp=sharing"><i style="font-size: 70px; " class="material-icons">
+cloud_download
+</i></a><br/>Click Here!</h5>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Header -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9291744844799241"
+     data-ad-slot="8071080147"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+                <br/><br/><br/><Br/><br/><br/><br/><br/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="push"></div>
+    </div>
+  </div>
+ 
+    <footer class="footer">
+  <div class="desktopfooter">
+    <div class="main-footer">
+      <div class="footer-drag-handle" onclick="toggleFooter()">
+        <i class="up-arrow material-icons">keyboard_arrow_up</i>
+        <i class="down-arrow material-icons">keyboard_arrow_down</i>
+      </div>
+      <!-- <div class="footer-section-headers"></div> -->
+      <div id="footerContent">
+        <div>
+          <div class="footer-links-container">
+            <div id="sectionOne" class="text-links">
+              <h4 class="footerheaders">Our Services</h4>
+             <a href="https://sujanpdl.com.np/bsc-csit/notes"><i class="fa fa-angle-double-right"></i>Notes</a></li><br/>
+<a href="https://sujanpdl.com.np/bsc-csit/pdf/bsc-syllabus.pdf"><i class="fa fa-angle-double-right"></i>Syallabus</a></li><br/>
+<a href="#"><i class="fa fa-angle-double-right"></i>PDF Files</a><br/>
+              
+            </div>
+            <div id="sectionTwo" class="text-links">
+              <h4 class="footerheaders">Useful Softwares</h4>
+            <a href=" https://www.sublimetext.com/3" target="_blank"><i class="fa fa-angle-double-right"></i>Sublime Text</a><br/>
+<a href=" https://notepad-plus-plus.org/download/v7.7.1.html" target="_blank"><i class="fa fa-angle-double-right"></i>Notepad++</a><br/>
+<a href="https://www.adobe.com/products/photoshop/free-trial-download.html " target="_blank"><i class="fa fa-angle-double-right"></i>Adobe Photoshop</a><br/>
+<a href="https://www.swi-prolog.org/download/stable " target="_blank"><i class="fa fa-angle-double-right"></i>SWI Prolog</a><br/>
+              
+            </div>
+            <div id="sectionThree" class="text-links">
+              <h4 class="footerheaders">Company</h4>
+<a href="https://sujanpdl.com.np/bsc-csit/about-us"><i class="fa fa-angle-double-right"></i>About Us</a><br/>
+<a href="https://sujanpdl.com.np/bsc-csit/privacy-policy"><i class="fa fa-angle-double-right"></i>Privacy Policy</a><br/>
+<a href="https://sujanpdl.com.np/bsc-csit/about-us"><i class="fa fa-angle-double-right"></i>Our Team</a><br/>
+<a href="https://sujanpdl.com.np/bsc-csit/faq"><i class="fa fa-angle-double-right"></i>FAQ's</a><br/>
+<a href="https://sujanpdl.com.np/bsc-csit/dmca"><i class="fa fa-angle-double-right"></i>DMCA</a><br/>
+             
+              
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+    <p id="copyright">&copy;2018 sujanpdl.com.np, Inc. All rights reserved.
+      Modified by: <a href="" target="_blank">Sujan Paudel</a>.
+      Powered by: <a href="https://edu.gcfglobal.org/" target="_blank">GCF Global</a></p><br/>.
+
+
+    </p>
+
+  </div>
+  <div class="mobilefooter">
+    <div class="footer-drag-handle" onclick="toggleMobileFooter()">
+      <i class="up-arrow material-icons">keyboard_arrow_up</i>
+      <i class="down-arrow material-icons">keyboard_arrow_down</i>
+    </div>
+    <div class="mobileFooterContent">
+      <a href="https://sujanpdl.com.np"><img class="globalicon" alt="sujanpdl.com.np" src="logo.png"></img></a>
+     <p id="copyright">&copy;2018 sujanpdl.com.np, Inc. All rights reserved.
+      Modified by: <a href="" target="_blank">Sujan Paudel</a>.
+      Powered by: <a href="https://edu.gcfglobal.org/" target="_blank">GCF Global</a></p><br/>.
+    </div>
+  </div>
+</footer>
+</body>
+</html>
